@@ -1,0 +1,34 @@
+Data Types
+
+str:
+	x=str("Hello")   ----->  Data Type  ----->string ----->o/p----->Hello
+	x=str(Hello)    ----->   Data Type  ----->invalid syntax
+	x=str(111)	------>  Data Type  ----->string ----->o/p----->111
+	x=str("111")	------>  Data Type  ----->string ----->o/p----->111
+	x=str(11.255)   ----->   Data Type  ----->string  ----->o/p----->11.255
+	x=str(True)     ----->   Data Type  ----->string ----->o/p----->True
+	x=str(2ki)      ----->   Data Type  ------>string ------>o/p ----->2ki
+int:
+	x=int("kiran") ----->   Data Type  ------> invalid literal for int() with base 10: 'kiran'
+	x=int(kiran)   ----->   Data Type  ----->  name 'kiran' is not defined
+	x=int(111)	------>  Data Type  ----->int  ------>o/p--->111
+	x=int("111")	------>  Data Type  ----->int  ----->o/p ---->111
+	x=int(11.255)   ----->   Data Type  ----->int  ----->o/p---->11
+	x=int(True)    ----->    Data Type  ----->int  ----->o/p ---->1
+	x=int(2ki)   ----->    Data Type  ------>can't convert complex to int 
+float:
+	x=float("kiran") ----->  Data Type  ------>  could not convert string to float: 'kiran'
+	x=float(kiran)   ----->  Data Type  ----->  name 'kiran' is not defined
+	x=float(111)	------>  Data Type  ----->float  ------>o/p--->111.0
+	x=float("111")	------>  Data Type  ----->float  ----->o/p ---->111.0
+	x=float(11.255)  ----->  Data Type  ----->float  ----->o/p---->11.255
+	x=float(True)    ----->  Data Type  ----->float  ----->o/p ---->1.0
+	x=float(2ki)   ----->    Data Type  ------>invalid syntax
+bool:
+	x=bool("kiran") ----->  Data Type  ------> bool--->o/p---->True 
+	x=bool(kiran)   ----->  Data Type  -----> name 'kiran' is not defined
+	x=bool(111)	------>  Data Type  ----->bool  ------>o/p--->True
+	x=bool("111")	------>  Data Type  ----->bool  ----->o/p ---->True
+	x=bool(11.255)  ----->  Data Type  ----->bool  ----->o/p---->True
+	x=bool(True)    ----->  Data Type  ----->bool  ----->o/p ---->True
+	x=bool(2ki)   ----->    Data Type  ------>invalid syntax

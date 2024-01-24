@@ -1,0 +1,55 @@
+Different cases on slicing:
+ 
+
+list= [My name is aramandla kirankumar]
+
+
+---->print(len(list)) ----> o/p ----->[30]
+---->print(list[15]) -------> o/p ----->[a]
+---->print(list[-10]) ------> o/p ------>[k]
+---->print(list[ : ]) -----> o/p ---->[My name is aramandla kirankumar]
+---->print(list[ : 9]) -----> o/p ----->[My name i]
+---->print(list[2: ]) ------> o/p ----->[_name is aramandla kirankumar]        
+---->print(list[1:15])------> o/p------>[y name is aram]
+---->print(list[-10:-2]) -----> o/p------>[kirankum]
+---->print(list[10:-2]) ------>o/p ------>[_aramandla kirankum]
+---->print(list[-10:2])------>o/p------>[]
+---->print(list[11:-2]) ------>o/p ----->[aramandla kirankum]
+---->print(list[ : : ])------>o/p------>[My name is aramandla kirankumar]
+---->print(list[1:28:1])------>o/p----->[y name is aramandla kiranku]
+---->print(list[3:30:2])------->o/p------>[nm s aaadakrnua]
+---->print(list[ :  :3])--------> o/p------>[ miamd rka]
+
+---> list[3]=c
+    print(list) ------> o/p ----->[My came is aramandla kirankumar]    --->    [Change Item Value]
+
+
+list = ["apple", "banana", "cherry", "orange", "kiwi", "mango"]
+---->list[1:3]=["black","red"]
+	print(list) -----> o/p ------>["apple", "black", "red", "orange", "kiwi", "mango"]    ----->[Change a Range of Item Values]
+----->list[1:4]=["blue"]
+ 	print(list) -----> o/p ------>["apple", "banana", "blue", "kiwi", "mango"]    ----->[Change a Range of Item Values]
+
+list = ["apple", "banana", "cherry", "orange", "kiwi", "mango"]
+------>list.insert(3,"black")
+	print(list)   -----> o/p ----->["apple", "banana", "cherry","black","orange", "kiwi", "mango"] ---->[Insert Items]
+------>list.append("orange")
+	prinrt(list) -----> o/p ----->["apple", "banana", "cherry","black","orange", "kiwi", "mango","orange"]   ---->[append]
+list = ["apple", "banana", "cherry"]
+list2= ["orange", "kiwi", "mango"]
+------>list.extend(list2)
+	print(list)  ----->o/p ----->  ["apple", "banana", "cherry", "orange", "kiwi", "mango"]     ----> [extend method]
+
+list = ["apple", "banana", "cherry", "orange", "kiwi", "mango"]
+----->list.remove("cherry")
+	print(list)  ----->o/p ----->["apple", "banana", "orange", "kiwi", "mango"]    ------>[remove method]
+----->list.pop(1)
+	print(list)------->o/p  ----> ["apple", "cherry", "orange", "kiwi", "mango"]    ----->[ specify the index remove]
+----->list.pop()
+	print(list)------->o/p ------->["apple", "banana", "cherry", "orange", "kiwi"]  ----->[last item remove]
+------>list.clear()
+	print(list)------>o/p------>[]       ------>[clear list]
+------>list.sort()
+	print(list) ------>o/p ----->["apple", "banana", "cherry", "kiwi", "mango","orange"] ----->[sort method]
+------>list.sort(reverse = True)
+	print(list) ------>o/p ---->["orange","mango","kiwi","cherry","banana","apple"]   ------>[reverse sort method]
